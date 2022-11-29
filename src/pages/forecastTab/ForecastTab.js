@@ -16,6 +16,8 @@ function ForecastTab({ coordinates }) {
           const fiveDayForecast = response.data.list.filter((singleForecast) => {
             return singleForecast.dt_txt.includes("12:00:00");
           });
+
+          setForecasts(fiveDayForecast);
       } catch(e) {
           console.error(e);
       }
