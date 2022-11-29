@@ -9,6 +9,7 @@ const apiKey = '--plaats jouw unieke API key hier--';
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
+  const [location, setLocation] = useState('');
 
   async function fetchData() {
     try {
