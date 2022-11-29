@@ -6,7 +6,13 @@ function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
 
   useEffect(() => {
-
+    async function fetchForecasts() {
+      try {
+          const response = await axios.get(`<endpoint-komt-hier>`);
+      } catch(e) {
+          console.error(e);
+      }
+    }
   }, [coordinates]);
 
   return (
