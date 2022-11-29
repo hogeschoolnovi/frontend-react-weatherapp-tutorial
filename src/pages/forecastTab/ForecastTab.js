@@ -1,7 +1,9 @@
 import React from 'react';
 import './ForecastTab.css';
 
-function ForecastTab() {
+function ForecastTab({ coordinates }) {
+  console.log(coordinates);
+
   return (
     <div className="tab-wrapper">
       <article className="forecast-day">
