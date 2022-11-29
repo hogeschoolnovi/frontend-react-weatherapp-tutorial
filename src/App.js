@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from './components/searchBar/SearchBar';
 import TabBarMenu from './components/tabBarMenu/TabBarMenu';
 import MetricSlider from './components/metricSlider/MetricSlider';
+import ForecastTab from './pages/forecastTab/ForecastTab';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
@@ -51,7 +52,7 @@ function App() {
           <TabBarMenu/>
 
           <div className="tab-wrapper">
-            Alle inhoud van de tabbladen komt hier!
+            <ForecastTab />
           </div>
         </div>
 
