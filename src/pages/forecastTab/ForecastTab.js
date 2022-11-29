@@ -13,7 +13,7 @@ function ForecastTab({ coordinates }) {
           const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
           console.log(response.data);
 
-          const fiveDayForecast = response.data.list.filter(() => {
+          const fiveDayForecast = response.data.list.filter((singleForecast) => {
             return `<CONDITIE BESCHRIJF JE HIER>`
           });
       } catch(e) {
