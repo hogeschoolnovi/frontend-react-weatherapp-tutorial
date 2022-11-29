@@ -14,7 +14,7 @@ function SearchBar() {
         placeholder="Zoek een stad in Nederland"
       />
 
-      <button type="button">
+      <button type="submit">
         Zoek
       </button>
     </form>
