@@ -4,7 +4,8 @@ import './SearchBar.css';
 function SearchBar() {
   const [query, setQuery] = useState('');
 
-  function onFormSubmit() {
+  function onFormSubmit(e) {
+    e.preventDefault();
     // deze functie zal ervoor zorgen dat de ingevulde waarde wordt doorgegeven aan App.js
   }
 
