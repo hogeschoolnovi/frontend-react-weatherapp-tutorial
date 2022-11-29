@@ -38,7 +38,7 @@ function ForecastTab({ coordinates }) {
       {forecasts.map((singleForecast) => {
         return <article className="forecast-day">
           <p className="day-description">
-            Maandag
+            {createDateString(singleForecast.dt)}
           </p>
 
           <section className="forecast-weather">
