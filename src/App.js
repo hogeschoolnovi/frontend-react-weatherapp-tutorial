@@ -37,11 +37,6 @@ function App() {
                 <h1>{weatherData.main.temp}</h1>
               </>
             }
-            <button
-              type="button"
-              onClick={fetchData}>
-              Haal data op!
-            </button>
           </span>
         </div>
 
