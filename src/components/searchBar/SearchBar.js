@@ -1,7 +1,7 @@
 import React, {  useState } from 'react';
 import './SearchBar.css';
 
-function SearchBar() {
+function SearchBar({ setLocationHandler }) {
   const [query, setQuery] = useState('');
 
   function onFormSubmit(e) {
