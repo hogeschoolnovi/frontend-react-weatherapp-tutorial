@@ -30,6 +30,9 @@ function ForecastTab({ coordinates }) {
 
   return (
     <div className="tab-wrapper">
+      {forecasts.map((singleForecast) => {
+        return <></>
+      })}
       <article className="forecast-day">
         <p className="day-description">
           Maandag
@@ -102,6 +105,7 @@ function ForecastTab({ coordinates }) {
           <span className="weather-description">
               Licht Bewolkt
             </span>
+          {/*elementen*/}
         </section>
       </article>
     </div>
