@@ -4,6 +4,8 @@ import './ForecastTab.css';
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
 
+  useEffect(() => {}, []);
+
   return (
     <div className="tab-wrapper">
       <article className="forecast-day">
