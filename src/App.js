@@ -30,7 +30,9 @@ function App() {
             <h3> </h3>
             <h1>14 &deg;</h1>
 
-            <button type="button">
+            <button
+              type="button"
+              onClick={fetchData}>
               Haal data op!
             </button>
           </span>
