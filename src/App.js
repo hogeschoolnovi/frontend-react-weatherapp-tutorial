@@ -8,6 +8,14 @@ import MetricSlider from './components/metricSlider/MetricSlider';
 const apiKey = '--plaats jouw unieke API key hier--';
 
 function App() {
+  async function fetchData() {
+    try {
+      const response = await `<mijn-request-komt-hier>`;
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
   return (
     <>
       <div className="weather-container">
