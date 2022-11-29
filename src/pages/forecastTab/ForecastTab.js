@@ -38,10 +38,10 @@ function ForecastTab({ coordinates }) {
 
           <section className="forecast-weather">
             <span>
-              12&deg; C
+              {singleForecast.main.temp}&deg; C
             </span>
             <span className="weather-description">
-              Licht Bewolkt
+              {singleForecast.weather[0].description}
             </span>
           </section>
         </article>
