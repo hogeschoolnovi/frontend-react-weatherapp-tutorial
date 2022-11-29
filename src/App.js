@@ -27,7 +27,7 @@ function App() {
 
         {/*HEADER -------------------- */}
         <div className="weather-header">
-          <SearchBar/>
+          <SearchBar setLocationHandler={setLocation} />
 
           <span className="location-details">
             {Object.keys(weatherData).length > 0 &&
