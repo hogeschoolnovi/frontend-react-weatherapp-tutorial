@@ -16,6 +16,10 @@ function ForecastTab({ coordinates }) {
           console.error(e);
       }
     }
+
+    if (coordinates) {
+      fetchForecasts();
+    }
   }, [coordinates]);
 
   return (
