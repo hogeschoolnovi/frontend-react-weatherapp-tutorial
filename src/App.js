@@ -11,7 +11,9 @@ function App() {
   const [weatherData, setWeatherData] = useState({});
   const [location, setLocation] = useState('');
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+
+  }, [location]);
 
   async function fetchData() {
     try {
