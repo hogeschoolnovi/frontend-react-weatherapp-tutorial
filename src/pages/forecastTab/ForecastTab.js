@@ -4,6 +4,10 @@ import './ForecastTab.css';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
+function createDateString(timestamp) {
+
+}
+
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
 
