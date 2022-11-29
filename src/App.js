@@ -14,6 +14,7 @@ function App() {
     try {
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=utrecht,nl&appid=${apiKey}&lang=nl`);
       console.log(response.data);
+      setWeatherData(response.data);
     } catch (e) {
       console.error(e);
     }
