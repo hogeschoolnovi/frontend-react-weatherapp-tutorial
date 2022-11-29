@@ -36,7 +36,7 @@ function ForecastTab({ coordinates }) {
   return (
     <div className="tab-wrapper">
       {forecasts.map((singleForecast) => {
-        return <article className="forecast-day">
+        return <article className="forecast-day" key={singleForecast.dt}>
           <p className="day-description">
             {createDateString(singleForecast.dt)}
           </p>
