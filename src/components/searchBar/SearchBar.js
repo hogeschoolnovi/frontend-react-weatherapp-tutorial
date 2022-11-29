@@ -6,7 +6,7 @@ function SearchBar({ setLocationHandler }) {
 
   function onFormSubmit(e) {
     e.preventDefault();
-    // deze functie zal ervoor zorgen dat de ingevulde waarde wordt doorgegeven aan App.js
+    setLocationHandler(query);
   }
 
   return (
