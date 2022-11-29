@@ -2,6 +2,8 @@ import React, {  useState } from 'react';
 import './SearchBar.css';
 
 function SearchBar() {
+  const [query, setQuery] = useState('');
+
   return (
     <span className="searchbar">
       <input
