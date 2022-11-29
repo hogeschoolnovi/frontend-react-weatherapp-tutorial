@@ -5,7 +5,7 @@ function SearchBar() {
   const [query, setQuery] = useState('');
 
   return (
-    <span className="searchbar">
+    <form className="searchbar">
       <input
         type="text"
         name="search"
@@ -17,7 +17,7 @@ function SearchBar() {
       <button type="button">
         Zoek
       </button>
-    </span>
+    </form>
   );
 }
 
