@@ -9,7 +9,7 @@ function SearchBar() {
   }
 
   return (
-    <form className="searchbar">
+    <form className="searchbar" onSubmit={onFormSubmit}>
       <input
         type="text"
         name="search"
