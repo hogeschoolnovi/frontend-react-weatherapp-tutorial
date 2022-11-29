@@ -12,18 +12,18 @@ function App() {
   const [location, setLocation] = useState('');
 
   useEffect(() => {
-
-  }, [location]);
-
-  async function fetchData() {
-    try {
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=utrecht,nl&appid=${apiKey}&lang=nl`);
-      console.log(response.data);
-      setWeatherData(response.data);
-    } catch (e) {
-      console.error(e);
+    async function fetchData() {
+      try {
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=utrecht,nl&appid=${apiKey}&lang=nl`);
+        console.log(response.data);
+        setWeatherData(response.data);
+      } catch (e) {
+        console.error(e);
+      }
     }
-  }
+
+    fetchData();
+  }, [location]);
 
   return (
     <>
