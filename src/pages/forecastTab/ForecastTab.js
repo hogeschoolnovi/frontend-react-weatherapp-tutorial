@@ -32,6 +32,7 @@ function ForecastTab({ coordinates }) {
         toggleError(true);
       }
     }
+    toggleLoading(false);
 
     if (coordinates) {
       fetchForecasts();
