@@ -47,6 +47,7 @@ function ForecastTab({ coordinates }) {
           Zoek eerst een locatie om het weer voor deze week te bekijken
         </span>
       }
+      {loading && <span>Loading...</span>}
       {forecasts.map((singleForecast) => {
         return <article className="forecast-day" key={singleForecast.dt}>
           <p className="day-description">
