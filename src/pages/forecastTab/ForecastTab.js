@@ -38,6 +38,7 @@ function ForecastTab({ coordinates }) {
 
   return (
     <div className="tab-wrapper">
+      {error && <span>Er is iets misgegaan met het ophalen van de data</span>}
       {forecasts.map((singleForecast) => {
         return <article className="forecast-day" key={singleForecast.dt}>
           <p className="day-description">
