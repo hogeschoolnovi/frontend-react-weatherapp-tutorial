@@ -11,6 +11,7 @@ const apiKey = '--plaats jouw unieke API key hier--';
 function App() {
   const [weatherData, setWeatherData] = useState({});
   const [location, setLocation] = useState('');
+  const [error, toggleError] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
