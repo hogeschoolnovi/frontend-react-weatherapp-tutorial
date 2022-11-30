@@ -16,16 +16,18 @@ function ForecastTab({ coordinates }) {
   useEffect(() => {
     async function fetchForecasts() {
       try {
-          const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
-          console.log(response.data);
+        toggleError(false);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
+        console.log(response.data);
 
-          const fiveDayForecast = response.data.list.filter((singleForecast) => {
-            return singleForecast.dt_txt.includes("12:00:00");
-          });
+        const fiveDayForecast = response.data.list.filter((singleForecast) => {
+          return singleForecast.dt_txt.includes("12:00:00");
+        });
 
-          setForecasts(fiveDayForecast);
-      } catch(e) {
-          console.error(e);
+        setForecasts(fiveDayForecast);
+      } catch (e) {
+        console.error(e);
+        toggleError(true);
       }
     }
 
