@@ -16,6 +16,7 @@ function ForecastTab({ coordinates }) {
 
   useEffect(() => {
     async function fetchForecasts() {
+      toggleLoading(true);
       try {
         toggleError(false);
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
