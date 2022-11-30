@@ -12,6 +12,7 @@ function createDateString(timestamp) {
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
   const [error, toggleError] = useState(false);
+  const [loading, toggleLoading] = useState(false);
 
   useEffect(() => {
     async function fetchForecasts() {
