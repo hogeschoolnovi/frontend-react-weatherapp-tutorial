@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './TodayTab.css';
+import axios from 'axios';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
@@ -7,7 +8,7 @@ function TodayTab({ coordinates }) {
 	useEffect(() => {
 		async function fetchForecast() {
 			try {
-			    const response = await <request-komt-hier>`;
+			    const response = await axios.get(``);
 			} catch(e) {
 			    console.error(e);
 			}
