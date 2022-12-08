@@ -8,7 +8,8 @@ function TodayTab({ coordinates }) {
 	useEffect(() => {
 		async function fetchForecast() {
 			try {
-			    const response = await axios.get(``);
+				const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
+				console.log(response.data);
 			} catch(e) {
 			    console.error(e);
 			}
