@@ -47,7 +47,7 @@ function TodayTab({ coordinates }) {
 			</div>
 			<div className="legend">
 				{forecasts.map((forecast) => {
-					return <span key={`${forecast.dt}-timestamp`}>{forecast.dt}</span>
+					return <span key={`${forecast.dt}-timestamp`}>{createTimeString(forecast.dt)}</span>
 				})}
 			</div>
 		</div>
