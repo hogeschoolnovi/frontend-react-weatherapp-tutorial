@@ -35,7 +35,9 @@ function TodayTab({ coordinates }) {
 	return(
 		<div className="tab-wrapper">
 			<div className="chart">
-				Hier komt de chart!
+				{forecasts.map(() => {
+
+				})}
 			</div>
 			<div className="legend">
 				<span>08:00 uur</span>
