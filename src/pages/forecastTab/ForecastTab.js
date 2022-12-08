@@ -5,11 +5,6 @@ import kelvinToCelsius from '../../helpers/kelvinToCelsius';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
-function createDateString(timestamp) {
-  const day = new Date(timestamp * 1000);
-  return day.toLocaleDateString('nl-NL', { weekday: 'long' });
-}
-
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
   const [error, toggleError] = useState(false);
