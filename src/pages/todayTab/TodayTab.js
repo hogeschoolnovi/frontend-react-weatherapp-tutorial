@@ -1,15 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './TodayTab.css';
 import axios from 'axios';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
 function TodayTab({ coordinates }) {
+	const [error, toggleError] = useState(false);
+
 	useEffect(() => {
 		async function fetchForecast() {
 			try {
 				const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&lang=nl`);
 				console.log(response.data);
+
 			} catch(e) {
 			    console.error(e);
 			}
