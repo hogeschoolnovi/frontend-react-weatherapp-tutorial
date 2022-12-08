@@ -6,7 +6,7 @@ const apiKey = '--plaats jouw unieke API key hier--';
 function TodayTab({ coordinates }) {
 	useEffect(() => {
 
-	}, []);
+	}, [coordinates]);
 
 	return(
 		<div className="tab-wrapper">
