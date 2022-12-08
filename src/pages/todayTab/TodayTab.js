@@ -1,6 +1,8 @@
 import React from 'react';
 import './TodayTab.css';
 
+const apiKey = '--plaats jouw unieke API key hier--';
+
 function TodayTab({ coordinates }) {
 	return(
 		<div className="tab-wrapper">
