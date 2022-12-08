@@ -6,7 +6,11 @@ const apiKey = '--plaats jouw unieke API key hier--';
 function TodayTab({ coordinates }) {
 	useEffect(() => {
 		async function fetchForecast() {
-
+			try {
+			    const response = await <request-komt-hier>`;
+			} catch(e) {
+			    console.error(e);
+			}
 		}
 
 		fetchForecast();
