@@ -50,6 +50,8 @@ function TodayTab({ coordinates }) {
 					return <span key={`${forecast.dt}-timestamp`}>{createTimeString(forecast.dt)}</span>
 				})}
 			</div>
+			{error && <span>Het ophalen van de voorspellingen is mislukt. Probeer het opnieuw.</span>}
+			{loading && (<span>Loading...</span>)}
 		</div>
   );
 }
