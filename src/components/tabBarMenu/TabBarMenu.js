@@ -7,14 +7,14 @@ function TabBarMenu() {
     <nav className="tab-bar">
       <ul>
         <li>
-          <a className="active" href="/">
+          <NavLink className={({ isActive }) => isActive && 'active'} to="/">
             Vandaag
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/">
+          <NavLink className={({ isActive }) => isActive && 'active'} to="/komende-week">
             Komende week
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
