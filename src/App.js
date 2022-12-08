@@ -6,6 +6,7 @@ import SearchBar from './components/searchBar/SearchBar';
 import TabBarMenu from './components/tabBarMenu/TabBarMenu';
 import MetricSlider from './components/metricSlider/MetricSlider';
 import ForecastTab from './pages/forecastTab/ForecastTab';
+import TodayTab from './pages/todayTab/TodayTab';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
@@ -63,7 +64,7 @@ function App() {
 
           <div className="tab-wrapper">
             <Routes>
-
+              <Route path="/" element={<TodayTab />} />
             </Routes>
             <ForecastTab coordinates={weatherData.coord}/>
           </div>
