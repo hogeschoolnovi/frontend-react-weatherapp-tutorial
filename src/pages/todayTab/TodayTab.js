@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './TodayTab.css';
 import axios from 'axios';
 import WeatherDetail from '../../components/weatherDetail/WeatherDetail';
+import createTimeString from '../../helpers/createTimeString';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
