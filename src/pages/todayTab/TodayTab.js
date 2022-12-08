@@ -5,7 +5,11 @@ const apiKey = '--plaats jouw unieke API key hier--';
 
 function TodayTab({ coordinates }) {
 	useEffect(() => {
+		async function fetchForecast() {
 
+		}
+
+		fetchForecast();
 	}, [coordinates]);
 
 	return(
