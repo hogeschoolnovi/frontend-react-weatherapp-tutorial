@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
 import SearchBar from './components/searchBar/SearchBar';
@@ -61,6 +62,9 @@ function App() {
           <TabBarMenu/>
 
           <div className="tab-wrapper">
+            <Routes>
+
+            </Routes>
             <ForecastTab coordinates={weatherData.coord}/>
           </div>
         </div>
