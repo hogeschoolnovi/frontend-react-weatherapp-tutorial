@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './TodayTab.css';
 
 const apiKey = '--plaats jouw unieke API key hier--';
 
 function TodayTab({ coordinates }) {
+	useEffect(() => {
+
+	}, []);
+
 	return(
 		<div className="tab-wrapper">
 			<div className="chart">
