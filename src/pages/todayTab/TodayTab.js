@@ -37,6 +37,7 @@ function TodayTab({ coordinates }) {
 			<div className="chart">
 				{forecasts.map((forecast) => {
 					return <WeatherDetail
+						key={forecast.dt}
 						temp={forecast.main.temp}
 						type={forecast.weather[0].main}
 						description={forecast.weather[0].description}
