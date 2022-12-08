@@ -14,8 +14,9 @@ function TodayTab({ coordinates }) {
 			    console.error(e);
 			}
 		}
-
-		fetchForecast();
+		if (coordinates) {
+			fetchForecast();
+		}
 	}, [coordinates]);
 
 	return(
